@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include "C:\Users\hp victus\source\repos\Ending\functions.h"
 
 using namespace std;
 
@@ -8,7 +9,7 @@ int main()
     int rate;
     int totalSum;
     int year = 0;
-    string years[3] = {" год", " года", " лет"};
+    char years = 'y';
     int word;
 
     start:
@@ -33,13 +34,9 @@ int main()
         year++;
     }
     
-    //мне срочно надо научиться делать функцию в отдельном файле или билиотеке, потому что работа с окончаниями почти в каждом проекте.
+    //я сделал функцию
 
-    if (year % 10 == 1) word = 0;
-    else if (year % 10 >= 5) word = 2;
-    else word = 1;
-
-    cout << "Вам потребуется " << year << years[word] << endl;
+    cout << "Вам потребуется " << year << ending(year, years) << endl;
 
 
     return 0;
