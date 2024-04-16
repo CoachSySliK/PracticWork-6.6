@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include "C:\Users\hp victus\source\repos\Ending\functions.h"
+#include "functions.h"
 
 using namespace std;
 
@@ -37,7 +37,6 @@ int main()
     //я сделал функцию
 
     cout << "Вам потребуется " << year << ending(year, years) << endl;
-
 
     return 0;
 }
